@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viscora Editor Photo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+</head>
+<body>
+    <div class="top-controls">  <!-- Now separate from the main container -->
+        <label for="upload" class="upload-btn">📂 Upload Image</label>
+        <input type="file" id="upload" accept="image/*" hidden>
+
+        <button id="apply-grayscale">🖤 Grayscale</button>
+        <button id="apply-binary">⚫⚪ Binary</button>
+
+        <select id="filter-mode">
+            <option value="none" selected>No Filter</option>
+            <option value="sunset">Sunset Glow</option>
+            <option value="lush">Lush Green</option>
+            <option value="sepia">Vintage Sepia</option>
+            <option value="cool">Cool Breeze</option>
+            <option value="warm">Warm Autumn </option>
+            <option value="neon">Neon Pop</option>
+            <option value="ocean">Ocean Deep</option>
+            <option value="mystic">Mystic Purple</option>
+            <option value="cyberpunk">Cyberpunk Glow</option>
+
+            <option value="silver">Silver Moon</option>
+        </select>
+
+        <button id="apply-filter">🎨 Apply Filter</button>
+        <button id="save">💾 Save</button>
+    </div>
+
+    <div class="container">
+        <h1>Viscora</h1>
+
+        <div class="image-container">
+            <div class="box">
+                <h3>Original</h3>
+                <img id="original-img" src="" alt="Original Image">
+            </div>
+            <div class="box">
+                <h3>Processed Image</h3>
+                <canvas id="filtered-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="logo/logo.png" alt="Viscora Logo" class="footer-logo">
+            <p>Viscora &copy; 2025</p>
+        </div>
+        <div class="footer-right">
+            <p>All rights reserved</p>
+            <p>Crafted with ❤️ by cañonero</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
